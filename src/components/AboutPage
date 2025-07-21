@@ -1,0 +1,11 @@
+import { Heading } from "@chakra-ui/react"
+
+const AboutPage = () => {
+    return(
+        <>
+            <Heading size="5xl">About</Heading>
+        </>
+    )
+}
+
+export default AboutPage

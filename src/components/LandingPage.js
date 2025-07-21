@@ -1,5 +1,6 @@
 import { HStack, VStack, Stack, Heading, Image, Center } from "@chakra-ui/react"
 import babyskipper from '../images/babyskipper.jpg'
+
 const LandingPage = () => {
     return (
 
