@@ -3,7 +3,7 @@ import { Heading } from "@chakra-ui/react"
 const AboutPage = () => {
     return(
         <>
-            <Heading size="5xl">About</Heading>
+            <Heading textAlign="center" size="5xl">About</Heading>
         </>
     )
 }
