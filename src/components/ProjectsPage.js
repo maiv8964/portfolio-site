@@ -1,13 +1,13 @@
-import { IconButton, Box, SimpleGrid, Heading, Button, Card, Image, Text } from "@chakra-ui/react"
+import { Box, SimpleGrid, Heading, Button, Card, Image, Text } from "@chakra-ui/react"
 
 const projects = [
     {
         name: "Grabbit- Secure Online Marketplace for Pre-Owned Goods",
         image: "",
-        alt: "Project logo with a purple rabbit",
+        alt: "",
         techStack: "Node.js, Express.js, Stripe, MongoDB, React.js",
         description: "",
-        github: ""
+        github: "https://github.com/maiv8964/Grabbit"
     },
     {
         name: "App Review Pre-Processing and Sentiment Analysis",
@@ -39,7 +39,7 @@ const projects = [
         alt: "",
         techStack: "Arduino, C++",
         description: "Coming Soon!",
-        github: ""
+        github: "https://github.com/maiv8964/Arduino-Projects"
     },
     {
         name: "AI Trip Planner Assistant",
@@ -62,7 +62,7 @@ const ProjectsPage = () => {
 
                     {projects.map((project) => {
                         return(
-                            <Card.Root maxW="sm" overflow="hidden">
+                            <Card.Root overflow="hidden">
                                 <Image
                                     src={project.image}
                                     alt={project.alt}
@@ -78,7 +78,7 @@ const ProjectsPage = () => {
                                 </Card.Body>
                                 <Card.Footer gap="2">
                                     <Button variant="solid">
-                                        <a href="https://google.com">View on Github</a>
+                                        <a href={project.github}>View on Github</a>
                                     </Button>
                                 </Card.Footer>
                             </Card.Root>
