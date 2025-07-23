@@ -1,11 +1,10 @@
-import { VStack, Stack, Heading, Image, Center } from "@chakra-ui/react"
+import { VStack, Stack, Heading, Image, Flex } from "@chakra-ui/react"
 import babyskipper from '../images/babyskipper.jpg'
 
 const LandingPage = () => {
     return (
 
-        <Center height="100vh">
-            <Stack direction={{base: "column", md: "row"}} gap="10">
+        <Flex height="100vh" alignItems="center" gap="10" justify="center" paddingY="10" wrap="wrap">
                 <Stack 
                     data-state="open"
                     _open={{
@@ -20,7 +19,7 @@ const LandingPage = () => {
                 </Stack>
                 <Image 
                     src={babyskipper}
-                    boxSize="150px"
+                    boxSize="300px"
                     borderRadius="full"
                     fit="cover"
                     alt="Vincent Mai"
@@ -30,8 +29,7 @@ const LandingPage = () => {
                         animationDuration: "2000ms",
                     }}
                 />
-            </Stack>
-        </Center>
+            </Flex>
         
     )
 }

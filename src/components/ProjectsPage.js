@@ -2,7 +2,7 @@ import { Box, SimpleGrid, Heading, Button, Card, Image, Text } from "@chakra-ui/
 
 const projects = [
     {
-        name: "Grabbit- Secure Online Marketplace for Pre-Owned Goods",
+        name: "Grabbit - Secure Online Marketplace for Pre-Owned Goods",
         image: "",
         alt: "",
         techStack: "Node.js, Express.js, Stripe, MongoDB, React.js",
@@ -56,7 +56,7 @@ const ProjectsPage = () => {
         <>
             <Heading textAlign="center" size="5xl">Projects</Heading>
 
-            <Box justifyItems="center" paddingTop="10">
+            <Box justifyItems="center" paddingY="10">
 
                 <SimpleGrid columns={[1,3]} gap="40px" marginX="5vw">
 
