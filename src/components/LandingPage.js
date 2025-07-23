@@ -1,5 +1,5 @@
 import { VStack, Stack, Heading, Image, Flex } from "@chakra-ui/react"
-import babyskipper from '../images/babyskipper.jpg'
+import portrait from '../images/portfolio.jpg'
 
 const LandingPage = () => {
     return (
@@ -18,8 +18,8 @@ const LandingPage = () => {
                     </VStack>
                 </Stack>
                 <Image 
-                    src={babyskipper}
-                    boxSize="300px"
+                    src={portrait}
+                    htmlWidth="400px"
                     borderRadius="full"
                     fit="cover"
                     alt="Vincent Mai"

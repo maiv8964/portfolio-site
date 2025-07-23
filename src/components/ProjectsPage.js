@@ -54,7 +54,7 @@ const projects = [
 const ProjectsPage = () => {
     return(
         <>
-            <Heading textAlign="center" size="5xl">Projects</Heading>
+            <Heading textAlign="center" size="5xl" alignItems="center">Projects</Heading>
 
             <Box justifyItems="center" paddingY="10">
 

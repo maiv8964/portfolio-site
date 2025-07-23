@@ -11,12 +11,12 @@ import NavComponent from './components/NavComponent';
 function App() {
   return (
     <>
-      <NavComponent></NavComponent>
-      <LandingPage></LandingPage>
-      <AboutPage></AboutPage>
-      <ExperiencePage></ExperiencePage>
-      <ProjectsPage></ProjectsPage>
-      <ContactPage></ContactPage>
+      <NavComponent/>
+      <div id="landing"><LandingPage /></div>
+      <div id="about"><AboutPage /></div>
+      <div id="experience"><ExperiencePage /></div>
+      <div id="projects"><ProjectsPage /></div>
+      <div id="contact"><ContactPage /></div>
     </>
     
   );

@@ -31,7 +31,7 @@ const experiences = [
 const ExperiencePage = () => {
     return(
         <>
-            <Heading textAlign="center" size="5xl">Experience</Heading>
+            <Heading textAlign="center" size="5xl" paddingTop="70px">Experience</Heading>
 
             <Container size="sm" paddingTop="10">
                 <Timeline.Root size="xl" variant="subtle">
@@ -58,7 +58,7 @@ const ExperiencePage = () => {
                                     </Stack>
                                     </Timeline.Title>
                                     <Timeline.Description>
-                                        <Text>{experience.description}</Text>
+                                        <Text textStyle="lg">{experience.description}</Text>
                                     </Timeline.Description>
                                 </Timeline.Content>
                                 </>
@@ -74,7 +74,7 @@ const ExperiencePage = () => {
                                     </Timeline.Title>
                                     <Timeline.Description>
                                         <Flex justifyContent="flex-end">
-                                            <Text>{experience.description}</Text>
+                                            <Text textStyle="lg">{experience.description}</Text>
                                         </Flex>
                                     </Timeline.Description>
                                 </Timeline.Content>
