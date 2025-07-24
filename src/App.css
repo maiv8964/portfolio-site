@@ -40,3 +40,46 @@
 html {
   scroll-behavior: smooth;
 }
+
+.fade-in-image {
+  animation: fadeIn 1s;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.slider-container {
+  border-radius: 20px;
+  overflow: hidden; /* Important to clip contents to border radius */
+}
+
+.title-switcher {
+  justify-content: center;
+  animation: swoosh 3.5s;
+}
+
+@keyframes swoosh {
+  0% {
+    transform: translate(-200px, 0);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0px, 0);
+  }
+  75% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(200px, 0);
+    opacity: 0;
+  }
+  
+}

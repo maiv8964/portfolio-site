@@ -6,6 +6,7 @@ import {Image} from "@chakra-ui/react"
 
 import algonquin from '../images/algonquin.jpg'
 import car from '../images/3carbg.jpg'
+import cycling from '../images/cycling.jpg'
 
 function ImageCarousel() {
   const settings = {
@@ -16,7 +17,8 @@ function ImageCarousel() {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false
+    arrows: false,
+    adaptiveHeight: false
   };
   return (
     <div className="slider-container">
@@ -24,13 +26,19 @@ function ImageCarousel() {
         <div>
             <Image 
                 src={algonquin}
-                alt="Vincent Mai" 
+                alt="Vincent Mai"
+            />
+        </div>
+        <div>
+            <Image 
+                src={cycling}
+                alt="Vincent Mai"
             />
         </div>
         <div>
             <Image 
                 src={car}
-                alt="Vincent Mai"    
+                alt="Vincent Mai"   
             />
         </div>
       </Slider>
