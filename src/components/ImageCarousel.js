@@ -4,14 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Image} from "@chakra-ui/react"
 
-import babyskipper from '../images/babyskipper.jpg'
+import algonquin from '../images/algonquin.jpg'
+import car from '../images/3carbg.jpg'
 
 function ImageCarousel() {
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "100px",
     slidesToShow: 1,
     speed: 500,
     autoplay: true,
@@ -23,20 +23,14 @@ function ImageCarousel() {
       <Slider {...settings}>
         <div>
             <Image 
-                src={babyskipper}
-                alt="Vincent Mai"        
+                src={algonquin}
+                alt="Vincent Mai" 
             />
         </div>
         <div>
             <Image 
-                src={babyskipper}
-                alt="Vincent Mai"        
-            />
-        </div>
-        <div>
-            <Image 
-                src={babyskipper}
-                alt="Vincent Mai"        
+                src={car}
+                alt="Vincent Mai"    
             />
         </div>
       </Slider>

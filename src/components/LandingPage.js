@@ -1,10 +1,18 @@
-import { VStack, Stack, Heading, Image, Flex } from "@chakra-ui/react"
+import { Box, VStack, Stack, Heading, Image, Flex } from "@chakra-ui/react"
 import portrait from '../images/portfolio.jpg'
-
+import background from '../images/background.jpg'
 const LandingPage = () => {
     return (
 
-        <Flex height="100vh" alignItems="center" gap="10" justify="center" paddingY="10" wrap="wrap">
+        <Box
+            bgImage={`url(${background})`}
+            bgSize="cover"
+            bgPosition="center"
+            bgRepeat="no-repeat"
+            height="100vh"
+            width="100vw"
+        >>
+            <Flex height="100vh" alignItems="center" gap="10" justify="center" paddingY="10" wrap="wrap">
                 <Stack 
                     data-state="open"
                     _open={{
@@ -30,7 +38,7 @@ const LandingPage = () => {
                     }}
                 />
             </Flex>
-        
+        </Box>
     )
 }
 
