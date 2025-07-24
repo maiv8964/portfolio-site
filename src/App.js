@@ -8,6 +8,10 @@ import ProjectsPage from './components/ProjectsPage';
 import ContactPage from './components/ContactPage';
 import NavComponent from './components/NavComponent';
 
+// push commit
+// npm run build
+// npm run deploy
+
 function App() {
   return (
     <>
