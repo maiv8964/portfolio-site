@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://maiv8964.github.io/portfolio-site",
+  "homepage": "https://www.vincentmai.tech",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^3.22.0",
