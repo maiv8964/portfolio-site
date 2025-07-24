@@ -4,12 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "./components/ui/provider"
+import {
+  ColorModeButton,
+  DarkMode,
+  LightMode,
+  useColorMode,
+  useColorModeValue,
+} from "./components/ui/color-mode"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider>
-      <App />
+      <DarkMode>
+        <App />
+      </DarkMode>
     </Provider>
   </React.StrictMode>
 );
