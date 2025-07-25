@@ -1,4 +1,4 @@
-import { SimpleGrid, VStack, Stack, Heading, Image, Box } from "@chakra-ui/react";
+import { Flex, SimpleGrid, VStack, Stack, Heading, Image, Box } from "@chakra-ui/react";
 import portrait from "../images/portfolio.jpg";
 import background from "../images/background.jpg";
 import React, { useState, useEffect } from 'react';
@@ -32,39 +32,72 @@ const LandingPage = () => {
         zIndex={0}
       />
 
-      <SimpleGrid minChildWidth="sm"position="relative" zIndex={1} height="100%" alignItems="center">
-        <Stack
-          data-state="open"
-          _open={{
-            animationName: "fade-in, scale-in",
-            animationDuration: "2000ms",
-          }}
-        >
-          <VStack justifyItems="center">
-            <Heading size={{base: "2xl", md: "7xl"}}>Hi, I'm Vincent</Heading>
-            <Heading size={{base: "2xl", md: "7xl"}} className="title-switcher" key={index}>{titles[index]}</Heading>
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        zIndex={2}
+        position="relative"
+        height="100%"
+        width="100%"
+        alignItems="center"
+        justifyContent="center"
+        wrap="wrap"
+        gapX={50}
+      >
+        <Box width="30%" margin={10}>
+          <VStack align="center" textAlign="center">
+            <Heading size={{ base: "5xl", md: "7xl" }}>Hi, I'm Vincent Mai</Heading>
+            <Heading size={{ base: "5xl", md: "7xl" }} className="title-switcher" key={index}>
+              {titles[index]}
+            </Heading>
           </VStack>
-        </Stack>
-
-        <Box
-          justifyItems="center"
-        >
-          <Image
-          src={portrait}
-          htmlWidth="50%"
-          borderRadius="full"
-          fit="cover"
-          alt="Vincent Mai"
-          data-state="open"
-          _open={{
-            animationName: "fade-in, slide-from-top, scale-in",
-            animationDuration: "2000ms",
-          }}
-        />
         </Box>
-      </SimpleGrid>
+
+        <Box margin={10} display="flex" justifyContent="center">
+          <Image
+            src={portrait}
+            className="portrait"
+            alt="Vincent Mai"
+            // data-state="open"
+            // _open={{
+            //   animationName: "fade-in, slide-from-top, scale-in",
+            //   animationDuration: "2000ms",
+            // }}
+          />
+        </Box>
+      </Flex>
+
     </Box>
   );
 };
 
 export default LandingPage;
+
+{/* <Stack
+  data-state="open"
+  _open={{
+    animationName: "fade-in, scale-in",
+    animationDuration: "2000ms",
+  }}
+>
+  <VStack justifyItems="center">
+    <Heading size={{ base: "2xl", md: "7xl" }}>Hi, I'm Vincent</Heading>
+    <Heading size={{ base: "2xl", md: "7xl" }} className="title-switcher" key={index}>{titles[index]}</Heading>
+  </VStack>
+</Stack> */}
+
+{/* <Box
+  justifyItems="center"
+>
+  <Image
+    src={portrait}
+    htmlWidth="50%"
+    borderRadius="full"
+    fit="cover"
+    alt="Vincent Mai"
+    data-state="open"
+    _open={{
+      animationName: "fade-in, slide-from-top, scale-in",
+      animationDuration: "2000ms",
+    }}
+  />
+</Box> */}

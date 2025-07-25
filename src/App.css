@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -44,17 +45,24 @@ html {
 
 .fade-in-image {
   animation: fadeIn 1s;
-  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));}
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .slider-container {
   border-radius: 20px;
-  overflow: hidden; /* Important to clip contents to border radius */
+  overflow: hidden;
+  /* Important to clip contents to border radius */
 }
 
 .title-switcher {
@@ -67,20 +75,53 @@ html {
     transform: translate(-200px, 0);
     opacity: 0;
   }
+
   25% {
     transform: translate(0px, 0);
     opacity: 1;
   }
+
   50% {
     transform: translate(0px, 0);
   }
+
   75% {
     transform: translate(0px, 0);
     opacity: 1;
   }
+
   100% {
     transform: translate(200px, 0);
     opacity: 0;
   }
-  
+
+}
+
+.portrait {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 25px;
+  animation: portrait-animation 2s ease;
+}
+
+@keyframes portrait-animation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(1) rotateY(0deg);
+    opacity: 1;
+  }
+
+  26% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(720deg);
+    
+  }
 }
