@@ -57,11 +57,6 @@ const LandingPage = () => {
             src={portrait}
             className="portrait"
             alt="Vincent Mai"
-            // data-state="open"
-            // _open={{
-            //   animationName: "fade-in, slide-from-top, scale-in",
-            //   animationDuration: "2000ms",
-            // }}
           />
         </Box>
       </Flex>
@@ -71,33 +66,3 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
-
-{/* <Stack
-  data-state="open"
-  _open={{
-    animationName: "fade-in, scale-in",
-    animationDuration: "2000ms",
-  }}
->
-  <VStack justifyItems="center">
-    <Heading size={{ base: "2xl", md: "7xl" }}>Hi, I'm Vincent</Heading>
-    <Heading size={{ base: "2xl", md: "7xl" }} className="title-switcher" key={index}>{titles[index]}</Heading>
-  </VStack>
-</Stack> */}
-
-{/* <Box
-  justifyItems="center"
->
-  <Image
-    src={portrait}
-    htmlWidth="50%"
-    borderRadius="full"
-    fit="cover"
-    alt="Vincent Mai"
-    data-state="open"
-    _open={{
-      animationName: "fade-in, slide-from-top, scale-in",
-      animationDuration: "2000ms",
-    }}
-  />
-</Box> */}
