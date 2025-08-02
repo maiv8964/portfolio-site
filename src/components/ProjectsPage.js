@@ -6,7 +6,7 @@ const projects = [
         image: "",
         alt: "",
         techStack: "Node.js, Express.js, Stripe, MongoDB, React.js",
-        description: "",
+        description: "An online marketplace for buying and selling pre-owned goods, with a focus on security and user experience. Features include user authentication, product listings, and payment processing.",
         github: "https://github.com/maiv8964/Grabbit"
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         image: "",
         alt: "",
         techStack: "Python, Selenium, NLTK, NLP, Machine Learning",
-        description: "",
+        description: "A project that involves pre-processing app reviews and performing sentiment analysis to gauge user opinions and improve app quality.",
         github: ""
     },
     {
@@ -22,7 +22,7 @@ const projects = [
         image: "",
         alt: "",
         techStack: "VHDL, MicroPython, DE-10 Lite FPGA, Rasberry Pi Pico 2W",
-        description: "",
+        description: "A project that integrates a classic game of Pac-Man with FPGA technology and Raspberry Pi, allowing for a unique gaming experience with AI controlled ghost elements.",
         github: ""
     },
     {
@@ -30,7 +30,7 @@ const projects = [
         image: "",
         alt: "",
         techStack: "HTML/CSS, Javascript, Bootstrap, SQLite, Docker, Jersey",
-        description: "",
+        description: "An online auction system that allows users to create, bid on, and manage auctions. Implements Forward and Dutch Auction types.",
         github: "https://github.com/maiv8964/EAuction"
     },
     {
@@ -38,7 +38,7 @@ const projects = [
         image: "",
         alt: "",
         techStack: "Arduino, C++",
-        description: "Coming Soon!",
+        description: "Updated Project Coming Soon!",
         github: "https://github.com/maiv8964/Arduino-Projects"
     },
     {
