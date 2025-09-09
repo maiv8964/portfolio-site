@@ -12,7 +12,7 @@ const experiences = [
         position: 'Junior Software Developer Intern',
         timespan: 'May 2023 - Dec 2023',
         company: 'Iot Signum',
-        description: 'Developed, debugged, and maintained a full-stack web application using Python, Django, HTML, CSS, and JavaScript. Improved back-end performance, enhanced UI responsiveness, and contributed to testing frameworks and feature development within an Agile team.'
+        description: 'Developed an IoT temperature monitoring app by optimizing Django REST APIs for faster data processing of 10k+ daily sensor readings and building a React front-end with offline editing to improve reliability for 100+ users. Integrated automated testing (Pytest & Cypress) into CI/CD to reduce deployment errors, enhanced UI performance, and delivered new features across Agile sprints.'
     },
     {
         position: 'Junior Software Developer Intern',
@@ -36,11 +36,8 @@ const ExperiencePage = () => {
             <Container size="sm" paddingTop="10">
                 <Timeline.Root size="xl" variant="subtle">
 
-                    
-
                     {experiences.map((experience, index) => {
                         return (
-                            
                             <Timeline.Item key={index}>
                             {!(index % 2) ? (
                                 <>
@@ -89,14 +86,9 @@ const ExperiencePage = () => {
                         );
                         })}
 
-
-                    
-
                 </Timeline.Root>
 
             </Container>
-
-            
         </>
     )
 }
